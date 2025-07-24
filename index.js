@@ -1,13 +1,13 @@
 import express from 'express';
 
-import usersRoutes from './routes/users.js'
+import entriesRoutes from './routes/entries.js'
 
 const app = express();
 const PORT = 80;
 
 app.use(express.json());
 
-app.use('/', userRoutes);
+app.use('/', entriesRoutes);
 
 app.get('/', (req, res) => res.send('Hello from Homepage.'));
 
