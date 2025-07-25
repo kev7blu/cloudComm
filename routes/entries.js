@@ -4,14 +4,14 @@ import { getEntry, getEntries, createEntry, deleteEntry, updateEntry } from '../
 
 const router = express.Router();
 
-router.get(':id', getEntry);
+router.get('/:id', getEntry);
 
-router.get('', getEntries);
+router.get('/', getEntries);
 
-router.put('', createEntry);
+router.put('/', createEntry);
 
-router.delete(':id', deleteEntry);
+router.delete('/:id', deleteEntry);
 
-router.post(':id', updateEntry);
+router.post('/:id', updateEntry);
 
 export default router;
