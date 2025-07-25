@@ -1,6 +1,17 @@
 import { v4 as uuidv4 } from 'uuid';
 
-let entries = []
+let entries = [
+	{
+		firstName: "testName1",
+		lastName: "testName2",
+		age: 12
+	},
+	{
+		firstName: "testName11",
+		lastName: "testName22",
+		age: 21
+	}
+]
 
 export const getEntry = (req, res) => {
 	const { id } = req.params;
