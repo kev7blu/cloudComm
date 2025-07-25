@@ -7,8 +7,8 @@ const PORT = 3000;
 
 app.use(express.json());
 
-app.use('/data', entriesRoutes);
+app.use('/', entriesRoutes);
 
-app.get('/', (req, res) => res.send('Hello from Homepage.'));
+// app.get('/', (req, res) => res.send('Hello from Homepage.'));
 
 app.listen(PORT, () => console.log(`Server running on port: http://18.209.119.175:${PORT}`));
