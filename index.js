@@ -11,4 +11,4 @@ app.use('/data', entriesRoutes);
 
 app.get('/', (req, res) => res.send('Hello from Homepage.'));
 
-app.listen(PORT, () => console.log(`Server running on port: http://18.209.119.175/:${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port: http://18.209.119.175:${PORT}`));
