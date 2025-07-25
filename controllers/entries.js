@@ -18,10 +18,12 @@ export const getEntries = (req, res) => {
 
 export const createEntry = (req, res) => {
 	const entry = req.body;
+	
+	const { id } = uuidv4();
 
-	entries.push({ ...entry, id: uuidv4() });
+	entries.push({ ...entry, id: id });
 
-	console.log(`POST request to create entry id:${id}`);
+	console.log(`POST request to create entry id: ${id}`);
 	res.send(`Entry ${entry.firstName} added to the database!`);
 }
 
