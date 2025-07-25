@@ -4,12 +4,14 @@ let entries = [
 	{
 		firstName: "testName1",
 		lastName: "testName2",
-		age: 12
+		age: 12,
+		id: uuidv4()
 	},
 	{
 		firstName: "testName11",
 		lastName: "testName22",
-		age: 21
+		age: 21,
+		id: uuidv4()
 	}
 ]
 
