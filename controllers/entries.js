@@ -2,16 +2,21 @@ import { v4 as uuidv4 } from 'uuid';
 
 let entries = [
 	{
-		firstName: "testName1",
-		lastName: "testName2",
-		age: 12,
+		firstName: "Conan",
+		lastName: "O'Brien",
+		age: 62,
 		id: uuidv4()
 	},
 	{
-		firstName: "testName11",
-		lastName: "testName22",
-		age: 21,
+		firstName: "Craig",
+		lastName: "Ferguson",
+		age: 63,
 		id: uuidv4()
+	},
+	{
+		firstName: "David",
+		lastName: "Letterman",
+		age: 78
 	}
 ]
 
