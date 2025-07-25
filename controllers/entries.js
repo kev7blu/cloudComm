@@ -7,24 +7,19 @@ export const getEntry = (req, res) => {
 
 	const foundEntry = entries.find((entry) => entry.id == id);
 
-	console.log(`GET request recieved for entry id: ${id}`);
 	res.send(foundEntry);
 }
 
 export const getEntries = (req, res) => {
-	console.log(`GET request recieved for all entries`);
 	res.send(entries);
 }
 
 export const createEntry = (req, res) => {
 	const entry = req.body;
-	
-	const userId = uuidv4();
 
-	entries.push({ ...entry, id: userId });
+	entries.push({ ...entry, id: uuidv4() });
 
-	console.log(`POST request to create entry id: ${userId}`);
-	res.send(`Entry ${entry.firstName} added to the database!`);
+	res.send(`Entry id ${entry.id} added to the database!`);
 }
 
 export const deleteEntry = (req, res) => {
