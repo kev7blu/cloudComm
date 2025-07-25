@@ -3,7 +3,7 @@ import express from 'express';
 import entriesRoutes from './routes/entries.js'
 
 const app = express();
-const PORT = 80;
+const PORT = 3000;
 
 app.use(express.json());
 
