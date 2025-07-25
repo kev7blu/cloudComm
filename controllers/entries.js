@@ -17,9 +17,11 @@ export const getEntries = (req, res) => {
 export const createEntry = (req, res) => {
 	const entry = req.body;
 
-	entries.push({ ...entry, id: uuidv4() });
+	const userId = uuidv4();
 
-	res.send(`Entry id ${entry.id} added to the database!`);
+	entries.push({ ...entry, id: userId });
+
+	res.send(`Entry id ${userId} added to the database!`);
 }
 
 export const deleteEntry = (req, res) => {
