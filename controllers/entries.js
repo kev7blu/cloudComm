@@ -7,10 +7,12 @@ export const getEntry = (req, res) => {
 
 	const foundEntry = entries.find((entry) => entry.id == id);
 
+	console.log(`GET request recieved for entry id: ${id}`);
 	res.send(foundEntry);
 }
 
 export const getEntries = (req, res) => {
+	console.log(`GET request recieved for all entries`);
 	res.send(entries);
 }
 
